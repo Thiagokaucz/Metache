@@ -7,10 +7,11 @@ session_start();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sua Aplicação</title>
+    <link rel="stylesheet" href="/public/css/header.css">
 </head>
 <body>
-    <header>
-        <nav>
+    <header class="site-header">
+        <nav class="site-nav">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/sobre">Sobre</a></li>
@@ -28,3 +29,5 @@ session_start();
             </ul>
         </nav>
     </header>
+</body>
+</html>
