@@ -10,7 +10,7 @@ class User {
     }
 
     public function create($nome, $email, $senha) {
-        $query = "INSERT INTO users (nome, email, senha) VALUES (:nome, :email, :senha)";
+        $query = "INSERT INTO Usuario (nome, email, senha) VALUES (:nome, :email, :senha)";
         $stmt = $this->conn->prepare($query);
 
         // Hash a senha antes de salvar no banco de dados
@@ -28,7 +28,7 @@ class User {
     }
 
     public function findByEmail($email) {
-        $query = "SELECT * FROM users WHERE email = :email";
+        $query = "SELECT * FROM Usuario WHERE email = :email";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':email', $email);
         $stmt->execute();
@@ -40,7 +40,7 @@ class User {
     }
 
     public function findById($userID) {
-        $query = "SELECT * FROM users WHERE userID = :userID";
+        $query = "SELECT * FROM Usuario WHERE userID = :userID";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(':userID', $userID);
         $stmt->execute();

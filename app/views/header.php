@@ -17,7 +17,7 @@ session_start();
                 <li><a href="/sobre">Sobre</a></li>
                 <?php if (isset($_SESSION['user_id'])): ?>
                     <li><a href="/compras">Minhas Compras</a></li>
-                    <li><a href="/anuncios">Meus Anúncios</a></li>
+                    <li><a href="/meusAnuncios">Meus Anúncios</a></li>
                     <li><a href="/chat">Chat</a></li>
                     <li><a href="/notificacoes">Notificações</a></li>
                     <li><a href="/anunciar">Anunciar</a></li>
