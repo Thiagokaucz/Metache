@@ -117,3 +117,6 @@ ADD FOREIGN KEY (remetente) REFERENCES Usuario(userID);
 
 ALTER TABLE Negociacao
 ADD FOREIGN KEY (chatID) REFERENCES Chat(chatID);
+
+-- ALterado
+ALTER TABLE Produto ADD COLUMN imagem VARCHAR(255);

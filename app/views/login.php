@@ -1,4 +1,3 @@
-<?php require_once('header.php'); ?>
 <h1>Login</h1>
 <?php if (isset($error)): ?>
     <p style="color: red;"><?php echo $error; ?></p>
@@ -18,4 +17,3 @@
 <p>
     <a href="/forgot-password">Esqueceu sua senha?</a>
 </p>
-<?php require_once('footer.php'); ?>

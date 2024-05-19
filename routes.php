@@ -9,7 +9,8 @@ $routes = [
     '/meusAnuncios' => 'MeusAnunciosController@index',
     '/chat' => 'ChatController@index',
     '/notificacoes' => 'NotificacoesController@index',
-    '/anunciar' => 'AnunciarController@index',
+    '/anunciar' => 'AnunciarController@mostrarFormulario',
+    '/gravar-anuncio' => 'AnunciarController@gravarAnuncio',
     // Adicione outras rotas aqui conforme necessário
 ];
 ?>
