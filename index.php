@@ -17,9 +17,16 @@ if (array_key_exists($url, $routes)) {
 
     // Instancia o controlador e chama o método
     $controller = new $controllerName();
-    $controller->$methodName();
+    if ($url === '/forgot-password' && $_SERVER['REQUEST_METHOD'] === 'POST') {
+        $controller->handleForm();
+    } else {
+        $controller->$methodName();
+    }
 } else {
     // Página não encontrada
     http_response_code(404);
+    require_once('app/views/header.php');
     require_once('app/views/error.php');
+    require_once('app/views/footer.php');
 }
+?>

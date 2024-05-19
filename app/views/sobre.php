@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sobre</title>
-</head>
-<body>
-    <h1>Sobre</h1>
-    <p>Projeto Metache</p>
-</body>
-</html>
+<?php require_once('header.php'); ?>
+<h1>Sobre</h1>
+<p>Projeto Metache</p>
+<?php require_once('footer.php'); ?>
