@@ -6,11 +6,11 @@ $routes = [
     '/logout' => 'LoginController@logout',
     '/register' => 'RegisterController@register',
     '/compras' => 'ComprasController@index',
-    '/meusAnuncios' => 'MeusAnunciosController@index',
+    '/meusAnuncios' => 'MeusAnunciosController@mostrarMeusAnuncios',
     '/chat' => 'ChatController@index',
     '/notificacoes' => 'NotificacoesController@index',
     '/anunciar' => 'AnunciarController@mostrarFormulario',
     '/gravar-anuncio' => 'AnunciarController@gravarAnuncio',
-    // Adicione outras rotas aqui conforme necessário
+    '/excluir-anuncio' => 'MeusAnunciosController@excluirAnuncio',
 ];
 ?>

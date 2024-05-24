@@ -1,5 +1,5 @@
 <footer>
-        <p>&copy; 2024. Todos os direitos reservados.</p>
+        <p>Metache 2024</p>
     </footer>
 </body>
 </html>

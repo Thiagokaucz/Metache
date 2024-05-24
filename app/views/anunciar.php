@@ -24,13 +24,6 @@
             <?php endforeach; ?>
         </select><br>
 
-        <label for="disponibilidade">Disponibilidade:</label>
-        <select id="disponibilidade" name="disponibilidade" required>
-            <?php foreach ($disponibilidades as $disponibilidade): ?>
-                <option value="<?php echo $disponibilidade; ?>"><?php echo ucfirst($disponibilidade); ?></option>
-            <?php endforeach; ?>
-        </select><br>
-
         <label for="categoriaID">Categoria:</label>
         <select id="categoriaID" name="categoriaID" required>
             <?php foreach ($categorias as $categoria): ?>

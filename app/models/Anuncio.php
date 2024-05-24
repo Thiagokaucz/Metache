@@ -1,5 +1,7 @@
 <?php
 require_once('config/connection.php');
+//require_once('app/models/Anuncio.php');
+
 
 class Anuncio {
     
@@ -7,16 +9,6 @@ class Anuncio {
         $database = new Database();
         $conn = $database->getConnection();
         $resultado = $conn->query("SHOW COLUMNS FROM Produto WHERE Field = 'condicao'");
-        $tipoColuna = $resultado->fetch(PDO::FETCH_ASSOC)['Type'];
-        preg_match("/^enum\(\'(.*)\'\)$/", $tipoColuna, $matches);
-        $opcoes = explode("','", $matches[1]);
-        return $opcoes;
-    }
-
-    public static function buscarDisponibilidades() {
-        $database = new Database();
-        $conn = $database->getConnection();
-        $resultado = $conn->query("SHOW COLUMNS FROM Produto WHERE Field = 'disponibilidade'");
         $tipoColuna = $resultado->fetch(PDO::FETCH_ASSOC)['Type'];
         preg_match("/^enum\(\'(.*)\'\)$/", $tipoColuna, $matches);
         $opcoes = explode("','", $matches[1]);
@@ -43,5 +35,36 @@ class Anuncio {
 
         return $stmt->execute();
     }
+
+    public static function buscarAnunciosUsuario($userID) {
+        $database = new Database();
+        $conn = $database->getConnection();
+        $stmt = $conn->prepare("SELECT * FROM Produto WHERE userID = :userID");
+        $stmt->bindParam(':userID', $userID);
+        $stmt->execute();
+        return $stmt->fetchAll(PDO::FETCH_ASSOC);
+    }
+
+    
+    public static function buscarAnuncio($anuncioID) {
+        $database = new Database();
+        $conn = $database->getConnection();
+
+        $stmt = $conn->prepare("SELECT * FROM Produto WHERE produtoID = :produtoID");
+        $stmt->bindParam(':produtoID', $anuncioID);
+        $stmt->execute();
+        return $stmt->fetch(PDO::FETCH_ASSOC);
+    }
+    
+    public static function excluirAnuncio($anuncioID) {
+        $database = new Database();
+        $conn = $database->getConnection();
+
+        $sql = "DELETE FROM Produto WHERE produtoID = :produtoID";
+        $stmt = $conn->prepare($sql);
+        $stmt->bindParam(':produtoID', $anuncioID);
+        $stmt->execute();
+    }
+    
 }
 ?>

@@ -1,4 +1,4 @@
 <?php require_once('header.php'); ?>
-<h1>Página Inicial</h1>
-<p>Bem-vindo à minha página inicial!</p>
+<h1>Pagina homel</h1>
+<p>colocar aqui</p>
 <?php require_once('footer.php'); ?>

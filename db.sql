@@ -1,4 +1,4 @@
--- Criação das tabelas
+-- Criacao das tabelas
 CREATE TABLE Usuario (
     userID INT PRIMARY KEY AUTO_INCREMENT,
     nome VARCHAR(255) NOT NULL,
@@ -85,7 +85,7 @@ CREATE TABLE Negociacao (
 );
 
 
--- Criação das ligações (chaves estrangeiras)
+-- Criacao das ligacoes 
 ALTER TABLE Usuario_Endereco
 ADD FOREIGN KEY (id_usuario) REFERENCES Usuario(userID),
 ADD FOREIGN KEY (IDEndereco) REFERENCES Endereco(IDEndereco);
