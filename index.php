@@ -3,7 +3,7 @@
 require_once('routes.php');
 
 // Obtém a URL atual
-$url = isset($_SERVER['PATH_INFO']) ? $_SERVER['PATH_INFO'] : '/';
+$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 // Verifica se a rota existe
 if (array_key_exists($url, $routes)) {

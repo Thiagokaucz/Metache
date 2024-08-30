@@ -2,8 +2,8 @@
 class Database {
     private $host = "localhost";
     private $db_name = "metache";
-    private $username = "thiago";
-    private $password = "admin";
+    private $username = "root";
+    private $password = "";
     public $conn;
 
     public function getConnection() {
