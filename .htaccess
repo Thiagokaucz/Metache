@@ -1,7 +1,0 @@
-# Ativa o módulo de reescrita
-RewriteEngine On
-
-# Define a regra de reescrita
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ index.php [L]

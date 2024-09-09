@@ -1,37 +1,25 @@
-Metache - Plataforma de Anúncios de Eletrônicos com Defeito e Equipamentos Fora de Linha
+Metache
+Transforme Defeitos em Oportunidades!
 
-A plataforma Metache propõe uma solução abrangente para os problemas de dispositivos eletrônicos com defeito e equipamentos fora de linha, fornecendo um mercado online onde os usuários podem comprar ou vender esses dispositivos, bem como encontrar equipamentos antigos para colecionadores ou para reposição.
-Funcionalidades Principais
+Visão Geral
+Metache é uma plataforma inovadora de anúncios, especializada na compra e venda de eletrônicos usados, vintage ou com defeito. Com foco em um mercado segmentado e uma abordagem centrada na segurança e conveniência do usuário, Metache facilita a negociação entre compradores e vendedores de forma segura, eficiente e sustentável.
 
-    Compra e Venda de Dispositivos Eletrônicos: Os usuários podem comprar e vender dispositivos eletrônicos com defeito ou fora de linha.
+Propósito do Projeto
+Metache surge para atender uma lacuna no mercado de eletrônicos usados, onde as principais plataformas de anúncios falham em satisfazer as necessidades de consumidores técnicos e entusiastas. Nosso objetivo é oferecer uma solução abrangente que facilita a negociação de produtos com defeitos ou antigos, promovendo a economia circular e contribuindo para a sustentabilidade ambiental.
 
-    Negociação de Preços via Chat: Os usuários têm a opção de iniciar um chat com o anunciante para negociar o valor do produto.
+Principais Funcionalidades
+Pesquisa Detalhada: Encontre eletrônicos por condição (usados, vintage, com defeito) e outras categorias, com filtros precisos.
+Negociação Segura: Sistema de chat integrado para negociação direta entre comprador e vendedor.
+Link de Compra Exclusivo: Transações seguras com geração de link de compra com prazo de validade.
+Impacto Ambiental: Incentivo à reutilização de eletrônicos, promovendo a sustentabilidade e redução de lixo eletrônico.
+Tecnologias
+Desenvolvimento: PHP
+Banco de Dados: MySQL
+Hospedagem: Servidores na nuvem
+Integração de Pagamento: Mercado Pago (Checkout Pro)
+Público-Alvo
+A plataforma é destinada a profissionais e entusiastas de informática e eletrônica, colecionadores de equipamentos antigos e consumidores que buscam peças de reposição ou produtos para reparo.
 
-    Compra Segura via Chat: Toda a negociação e compra são realizadas através de um chat dentro da plataforma, garantindo a segurança e a privacidade dos usuários.
+Metodologia de Desenvolvimento
+O projeto é desenvolvido utilizando a metodologia ágil Scrum, com sprints de 1 a 4 semanas. Utilizamos Trello para gerenciamento de tarefas, Bitbucket para controle de versão e Confluence para a documentação.
 
-Como Funciona
-
-    Pesquisa e Anúncios: Os usuários podem pesquisar por dispositivos eletrônicos e visualizar anúncios dos produtos disponíveis.
-
-    Negociação: Os interessados podem iniciar um chat com o anunciante para negociar o valor do produto.
-
-    Proposta de Compra: Após a negociação, o comprador pode aceitar a proposta de compra enviada pelo vendedor através do chat.
-
-    Detalhes de Entrega: Após a confirmação da compra, o comprador fornece os detalhes de entrega através da plataforma.
-
-    Pagamento: O pagamento é combinado e realizado através do chat.
-
-Tecnologias Utilizadas
-
-    Frontend: HTML, CSS, JavaScript
-    Backend: PHP
-    Banco de Dados: MySQL
-    Chat:
-
-Instalação e Uso
-
-    Nota: Ainda não é possível utilizar a plataforma, a mesma está em desenvolvimento.
-
-Contribuição
-
-    Contribuições são bem-vindas! Sinta-se à vontade para abrir um Pull Request com melhorias, correções de bugs ou novas funcionalidades.
