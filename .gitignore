@@ -1,0 +1,4 @@
+phpmyadmin/
+.vscode/
+.idea/
+vendor/
